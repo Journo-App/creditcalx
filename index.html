@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>View Source</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<!--tells the app to go fullscreen instead of extra toolbar at top/bottom when displayed in browser -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<link rel="stylesheet" href="_/css/calctheme.css" />
+	<link rel="stylesheet" href="_/css/structure.css" />
+	
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+ 
+
+	<script src="_/js/myscript.js"></script>
+	<link rel="stylesheet" href="_/css/mystyles.css" />
+</head>
+<body>
+
+<!-- page 1: Splash page -->
+<div id="home" data-role="page"  data-title="View Source: Home">
+<div data-role="header" data-position="fixed">
+<h1>Home</h1>
+
+<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog" class="ui-btn-right">Info</a>
+
+</div> <!--end of splash page div -->
+		<div data-role="content">Welcome</div>
+		<div data-role="controlgroup">
+		<a href="#compoundcalculator" 
+		data-role="button"
+		data-icon="arrow-r"
+		>Interest Calculator</a>
+		<a href="#debtcalculator" 
+		data-role="button"
+		data-icon="arrow-r"
+		>Debt Calculator</a>
+		
+		<a href="#expertadvice" 
+		data-role="button"
+		data-icon="arrow-r"
+		>Expert Advice</a>
+		<a href="#videoadvice" 
+		data-role="button"
+		data-icon="arrow-r"
+		>Video Advice</a>
+		<a href="#tweets" 
+		data-role="button"
+		data-icon="arrow-r"
+		>Tweets</a>
+		</div>
+	</div> <!-- end of button div on splash page -->
+ 
+ <!-- page 2: Compound Calculator -->
+ <div id="compoundcalculator" data-role="page"   data-title="View Source: Compound Calculator">
+<div data-role="header" data-position="fixed" data-id="vs_header">
+<h1>Calculator</h1>
+<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
+
+</div><!--header-->
+<div data-role="content">Compound Calculator</div>
+
+<div data-role="footer" 
+data-position="fixed"
+data-id="vs_footer">
+<div data-role="navbar">
+<ul>
+<li><a href="#" 
+data-role="button"
+data-icon="arrow-r"
+>Compound Calculator</a></li>
+<li><a href="#debtcalculator" 
+data-role="button"
+data-icon="arrow-r"
+>Debt Calculator</a></li>
+<li><a href="#expertadvice" 
+data-role="button"
+data-icon="arrow-r"
+>Expert Advice</a></li>
+<li><a href="#videoadvice" 
+data-role="button"
+data-icon="arrow-r"
+>Video Advice</a><li
+<li><a href="#tweets" 
+data-role="button"
+data-icon="arrow-r"
+>Tweets</a></li>
+</ul>
+</div><!--end of navbar div -->
+</div> <!-- end of footer -->
+</div> <!--closing div for Compound Calculator page-->
+
+
+<!--page 3: Debt Calculator -->
+<div id="debtcalculator" data-role="page"   data-title="View Source: Debt Calculator">
+<div data-role="header" data-position="fixed" data-id="vs_header">
+<h1>Debt Calculator</h1>
+<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
+
+</div>
+
+<p>Debt Calculator</p>
+<div data-role="footer" 
+data-position="fixed"
+data-id="vs_footer">
+<div data-role="navbar">
+<ul>
+<li><a href="#compoundcalculator" 
+data-role="button"
+data-icon="arrow-r"
+>Compound Calculator</a></li>
+<li><a href="#" 
+data-role="button"
+data-icon="arrow-r"
+>Debt Calculator</a></li>
+<li><a href="#expertadvice" 
+data-role="button"
+data-icon="arrow-r"
+>Expert Advice</a></li>
+<li><a href="#videoadvice" 
+data-role="button"
+data-icon="arrow-r"
+>Video Advice</a><li
+<li><a href="#tweets" 
+data-role="button"
+data-icon="arrow-r"
+>Tweets</a></li>
+</ul>
+</div><!--end of navbar div -->
+</div> <!-- end of footer -->
+</div><!--closing div for Debt Calculator -->
+
+<!--Expert Advice -->
+<div id="expertadvice" data-role="page"   data-title="View Source: Expert Advice">
+<div data-role="header" data-position="fixed" data-id="vs_header">
+<h1>Expert Advice</h1>
+<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
+</div>
+<div data-role="content">Expert Advice</div>
+<div data-role="footer" 
+data-position="fixed"
+data-id="vs_footer">
+<div data-role="navbar">
+<ul>
+<li><a href="#compoundcalculator" 
+data-role="button"
+data-icon="arrow-r"
+>Compound Calculator</a></li>
+<li><a href="#debtcalculator" 
+data-role="button"
+data-icon="arrow-r"
+>Debt Calculator</a></li>
+<li><a href="#" 
+data-role="button"
+data-icon="arrow-r"
+>Expert Advice</a></li>
+<li><a href="#videoadvice" 
+data-role="button"
+data-icon="arrow-r"
+>Video Advice</a><li
+<li><a href="#tweets" 
+data-role="button"
+data-icon="arrow-r"
+>Tweets</a></li>
+</ul>
+</div><!--end of navbar div -->
+</div> <!-- end of footer -->
+</div><!--closing div for Expert Advice -->
+
+<!-- Page: Videos -->
+	<div id="videos"
+		data-role="page"
+		data-title="View Source: Videos">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Videos</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+
+	<div data-role="content">
+		<div class="ui-grid-a" id="videolist">
+		</div><!-- grid -->
+	</div><!-- content -->
+
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="vs_blog"
+					>Blog</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="vs_photo"
+					>Photos</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="vs_twitter"
+					>Tweets</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+	
+	<div id="videoplayer"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#videos"
+				data-transition="fade"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse"
+				>Videos</a>
+			<h1>Videos</h1>
+		</div><!-- header -->
+		<div data-role="content">
+			<div id="myplayer"></div>
+		</div><!-- content -->
+	</div><!-- page -->
+	
+
+<!--Twitter feed-->
+<div id="tweets" data-role="page"   data-title="View Source: Tweets">
+<div data-role="header" data-position="fixed" data-id="vs_header">
+<h1>Twitter feed</h1>
+<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
+</div>
+
+<div data-role="content"
+			id="tweetlist">Loading...thank you for your patience with Twitter...
+			</div>
+
+<div data-role="footer" 
+data-position="fixed"
+data-id="vs_footer">
+<div data-role="navbar">
+<ul>
+<li><a href="#compoundcalculator" 
+data-role="button"
+data-icon="arrow-r"
+>Compound Calculator</a></li>
+<li><a href="#debtcalculator" 
+data-role="button"
+data-icon="arrow-r"
+>Debt Calculator</a></li>
+<li><a href="#expertadvice" 
+data-role="button"
+data-icon="arrow-r"
+>Expert Advice</a></li>
+<li><a href="#videoadvice" 
+data-role="button"
+data-icon="arrow-r"
+>Video Advice</a><li
+<li><a href="#" 
+data-role="button"
+data-icon="arrow-r"
+>Tweets</a></li>
+</ul>
+</div><!--end of navbar div -->
+</div> <!-- end of footer -->
+</div> <!--closing div for Tweets-->
+
+<!--info dialogue -->
+<div data-role="page"   id="info">
+		<div data-role="header">
+			<h1>About View Source</h1>
+		</div>
+		<div data-role="content">
+			<p>Text goes here.</p>
+			<a href="#"
+				data-role="button"
+				data-inline="true"
+				data-rel="back"
+			>cancel</a>
+			<a href="#home"
+				data-role="button"
+				data-inline="true"
+			>home</a>
+		</div>
+	</div>
+	<!--end of info dialogue-->
+
+<!-- blog call -->
+<script src="http://iviewsource.com/?json=recentstories&callback=listPosts" type="text/javascript"></script>
+
+<!-- YouTube call -->
+<!-- the url/uploads?...the category is the keyword that tells the API which videos you want. script...&category=creditcalx&callback=listVideos....
+I took it out bc we want all -->
+
+<script src="http://gdata.youtube.com/feeds/users/creditcalx/uploads?alt=json-in-script&max-results=30&callback=listVideos" type="text/javascript"></script>
+
+
+
+
+
+<script src="http://twitter.com/status/user_timeline/angelawoodall.json?count=30&callback=listTweets" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var refreshID = setInterval(function() {
+			$.getJSON('http://twitter.com/status/user_timeline/angelawoodall.json?count=30&callback=?',function(data) {
+				listTweets(data);
+				$('#tweetlist').trigger('create');
+			});
+		}, 5000);
+	});
+</script>
+
+
+</body>
+</html>
