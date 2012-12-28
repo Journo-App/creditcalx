@@ -1,0 +1,284 @@
+// custom CSS for CreditCalx app
+
+
+.ui-bar-a {
+	border: 1px solid 		#2A2A2A /*{a-bar-border}*/;
+	background: 			#111111 /*{a-bar-background-color}*/;
+	color: 					#ffffff /*{a-bar-color}*/;
+	font-weight: bold;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #000000 /*{a-bar-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c /*{a-bar-background-start}*/), to(#111 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/);
+}
+
+.ui-mobile fieldset, .ui-page { padding: 0; margin: 0; background-image: url("images/graph_background.jpg");}
+.ui-mobile, .ui-mobile body { height: 99.9%; background-image: url("images/graph_background.jpg");}
+
+font-family: 'Asap', sans-serif;
+
+#fullPrice {
+	font-size: 2em;
+	color: rgba(0, 249, 0, 0.8);
+}
+
+#interest {
+	font-size: 2em;
+	color: rgba(255, 38, 0, 0.8);
+}
+
+#displayPrice {
+	font-size: 2em;
+	color: rgba(0, 249, 0, 0.8);	
+}
+
+#displayRate {
+	font-size: 1.4em;
+}
+
+#displayMonth {
+	font-size: 1.4em;
+}
+
+#debtCalcButton {
+	width: 60%;
+	margin: 0 auto;
+	max-width: 200px;
+}
+	
+
+#videolist h3 {
+	margin: 15px 0 5px 0;
+	height: 35px;
+	overflow: hidden;
+	font-size: 1em;
+}
+
+#videolist img {
+	width: 90%;
+}
+
+#videolist a {
+	text-decoration: none;
+}
+
+#videoplayer .ui-content {
+	margin: 0;
+	padding: 0;
+}
+
+#videoplayer iframe {
+	width: 100%;
+	min-height: 50%;
+}
+
+#videoplayer h3, #player p {
+	padding: 0 5%;
+}
+
+.nutwork {
+	display: none;
+}
+
+.ui-bar-a, 
+.ui-bar-a input, 
+.ui-bar-a select, 
+.ui-bar-a textarea, 
+.ui-bar-a button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{a-bar-font}*/;
+}
+.ui-bar-a .ui-link-inherit {
+	color: #fff /*{a-bar-color}*/;
+}
+
+.ui-bar-a .ui-link {
+	color: #7cc4e7 /*{a-bar-link-color}*/;
+	font-weight: bold;
+}
+
+.ui-bar-a .ui-link:hover {
+	color: #2489CE /*{a-bar-link-hover}*/;
+}
+
+.ui-bar-a .ui-link:active {
+	color: #2489CE /*{a-bar-link-active}*/;
+}
+
+.ui-bar-a .ui-link:visited {
+    color: #2489CE /*{a-bar-link-visited}*/;
+}
+.ui-body-a {
+	border: 1px solid 		#2A2A2A /*{a-body-border}*/;
+	background: 			#FFFFFF /*{a-body-background-color}*/;
+	color: 					##787272 /*{a-body-color}*/;
+	 text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #000 /*{a-body-shadow-color}*/;
+	font-weight: normal;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666 /*{a-body-background-start}*/), to(#222 /*{a-body-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #666 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(top, #666 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #666 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient(top, #666 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #666 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/);	
+}
+.ui-body-a,
+.ui-body-a input,
+.ui-body-a select,
+.ui-body-a textarea,
+.ui-body-a button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{a-body-font}*/;
+}
+
+.hidden {
+	display: none;
+}
+
+
+.resultPrice {
+	font-family: Asap;
+	color: #11ed23;
+}
+
+.ui-body-a .ui-link-inherit {
+	color: 	#fff /*{a-body-color}*/;
+}
+
+.ui-body-a .ui-link {
+	color: #2489CE /*{a-body-link-color}*/;
+	font-weight: bold;
+}
+
+.ui-body-a .ui-link:hover {
+	color: #2489CE /*{a-body-link-hover}*/;
+}
+
+.ui-body-a .ui-link:active {
+	color: #2489CE /*{a-body-link-active}*/;
+}
+
+.ui-body-a .ui-link:visited {
+    color: #2489CE /*{a-body-link-visited}*/;
+}
+
+.ui-br {
+	border-bottom: rgb(130,130,130);
+	border-bottom: rgba(130,130,130,.3);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.ui-btn-up-a {
+	border: 1px solid 		#222 /*{a-bup-border}*/;
+	background: 			#333333 /*{a-bup-background-color}*/;
+	font-weight: bold;
+	color: 					#fff /*{a-bup-color}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ -1px /*{a-bup-shadow-y}*/ 1px /*{a-bup-shadow-radius}*/ #000 /*{a-bup-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#555 /*{a-bup-background-start}*/), to(#333 /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #555 /*{a-bup-background-start}*/, #333 /*{a-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(top, #555 /*{a-bup-background-start}*/, #333 /*{a-bup-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #555 /*{a-bup-background-start}*/, #333 /*{a-bup-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient(top, #555 /*{a-bup-background-start}*/, #333 /*{a-bup-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #555 /*{a-bup-background-start}*/, #333 /*{a-bup-background-end}*/);
+}
+
+.ui-btn-up-a,
+.ui-btn-hover-a,
+.ui-btn-down-a {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{a-button-font}*/;
+	text-decoration: none;
+}
+
+.ui-bar-b,
+.ui-bar-b input,
+.ui-bar-b select,
+.ui-bar-b textarea,
+.ui-bar-b button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{b-bar-font}*/;
+}
+
+.ui-body-b,
+.ui-body-b input,
+.ui-body-b select,
+.ui-body-b textarea,
+.ui-body-b button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{b-body-font}*/;
+}
+
+.ui-btn-up-b,
+.ui-btn-hover-b,
+.ui-btn-down-b {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{b-button-font}*/;
+	text-decoration: none;
+}
+
+.ui-bar-c,
+.ui-bar-c input,
+.ui-bar-c select,
+.ui-bar-c textarea,
+.ui-bar-c button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{c-bar-font}*/;
+}
+
+.ui-body-c,
+.ui-body-c input,
+.ui-body-c select,
+.ui-body-c textarea,
+.ui-body-c button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{c-body-font}*/;
+}
+
+.ui-btn-up-c,
+.ui-btn-hover-c,
+.ui-btn-down-c {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{c-button-font}*/;
+	text-decoration: none;
+}
+
+.ui-bar-d,
+.ui-bar-d input,
+.ui-bar-d select,
+.ui-bar-d textarea,
+.ui-bar-d button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{d-bar-font}*/;
+}
+
+.ui-body-d,
+.ui-body-d input,
+.ui-body-d select,
+.ui-body-d textarea,
+.ui-body-d button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{d-body-font}*/;
+}
+
+.ui-btn-up-d,
+.ui-btn-hover-d,
+.ui-btn-down-d {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{d-button-font}*/;
+	text-decoration: none;
+}
+
+.ui-bar-e,
+.ui-bar-e input,
+.ui-bar-e select,
+.ui-bar-e textarea,
+.ui-bar-e button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{e-bar-font}*/;
+}
+
+.ui-body-e,
+.ui-body-e input,
+.ui-body-e select,
+.ui-body-e textarea,
+.ui-body-e button {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{e-body-font}*/;
+}
+
+.ui-btn-up-e,
+.ui-btn-hover-e,
+.ui-btn-down-e {
+	font-family: Asap, Helvetica, Arial, sans-serif /*{e-button-font}*/;
+	text-decoration: none;
+}
+
+input.ui-input-text, textarea.ui-input-text { background-image: none; padding: .4em 1.5%; line-height: 1.4; font-size: 16px; display: block; width: 40%; }

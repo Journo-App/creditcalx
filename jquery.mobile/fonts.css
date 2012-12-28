@@ -1,0 +1,10 @@
+@font-face {
+  font-family: STTransmissionBold;
+  src: url('../fonts/sttransmission-condensed-900-extrabold-webfont.ttf');
+}
+
+
+@font-face {
+  font-family: STTransmissionThin;
+  src: url('../fonts/sttransmission-condensed-100-thin-webfont.ttf');
+}

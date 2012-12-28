@@ -1,344 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>View Source</title>
+  <head>
+  <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>CreditCalx Proto</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	
-	<!--tells the app to go fullscreen instead of extra toolbar at top/bottom when displayed in browser -->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<link rel="stylesheet" href="_/css/calctheme.css" />
-	<link rel="stylesheet" href="_/css/structure.css" />
-	
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
- 
+    <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.0rc2.css" />
+    <link rel="stylesheet" href="custom_CC.css" />
+    
+    <!-- <link rel="stylesheet" href="css/fonts.css" /> -->
+    <script src="jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="jquery.mobile/jquery.mobile-1.0rc2.js" type="text/javascript"></script>
+    <script src="myscript.js" type="text/javascript"></script>
 
-	<script src="_/js/myscript.js"></script>
-	<link rel="stylesheet" href="_/css/mystyles.css" />
-</head>
-<body>
-
-<!-- page 1: Splash page -->
-<div id="home" data-role="page"  data-title="View Source: Home">
-<div data-role="header" data-position="fixed">
-<h1>Home</h1>
-
-<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog" class="ui-btn-right">Info</a>
-
-</div> <!--end of splash page div -->
-		<div data-role="content">Welcome</div>
-		<div data-role="controlgroup">
-		<a href="#compoundcalculator" 
-		data-role="button"
-		data-icon="arrow-r"
-		>Interest Calculator</a>
-		<a href="#debtcalculator" 
-		data-role="button"
-		data-icon="arrow-r"
-		>Debt Calculator</a>
-		
-		<a href="#expertadvice" 
-		data-role="button"
-		data-icon="arrow-r"
-		>Expert Advice</a>
-		<a href="#videoadvice" 
-		data-role="button"
-		data-icon="arrow-r"
-		>Video Advice</a>
-		<a href="#tweets" 
-		data-role="button"
-		data-icon="arrow-r"
-		>Tweets</a>
-		</div>
-	</div> <!-- end of button div on splash page -->
- 
- <!-- page 2: Compound Calculator -->
- <div id="compoundcalculator" data-role="page"   data-title="View Source: Compound Calculator">
-<div data-role="header" data-position="fixed" data-id="vs_header">
-<h1>Calculator</h1>
-<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
-<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
-
-</div><!--header-->
-<div data-role="content">Compound Calculator</div>
-
-<div data-role="footer" 
-data-position="fixed"
-data-id="vs_footer">
-<div data-role="navbar">
-<ul>
-<li><a href="#" 
-data-role="button"
-data-icon="arrow-r"
->Compound Calculator</a></li>
-<li><a href="#debtcalculator" 
-data-role="button"
-data-icon="arrow-r"
->Debt Calculator</a></li>
-<li><a href="#expertadvice" 
-data-role="button"
-data-icon="arrow-r"
->Expert Advice</a></li>
-<li><a href="#videoadvice" 
-data-role="button"
-data-icon="arrow-r"
->Video Advice</a><li
-<li><a href="#tweets" 
-data-role="button"
-data-icon="arrow-r"
->Tweets</a></li>
-</ul>
-</div><!--end of navbar div -->
-</div> <!-- end of footer -->
-</div> <!--closing div for Compound Calculator page-->
+  </head>
+  
 
 
-<!--page 3: Debt Calculator -->
-<div id="debtcalculator" data-role="page"   data-title="View Source: Debt Calculator">
-<div data-role="header" data-position="fixed" data-id="vs_header">
-<h1>Debt Calculator</h1>
-<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
-<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
 
-</div>
 
-<p>Debt Calculator</p>
-<div data-role="footer" 
-data-position="fixed"
-data-id="vs_footer">
-<div data-role="navbar">
-<ul>
-<li><a href="#compoundcalculator" 
-data-role="button"
-data-icon="arrow-r"
->Compound Calculator</a></li>
-<li><a href="#" 
-data-role="button"
-data-icon="arrow-r"
->Debt Calculator</a></li>
-<li><a href="#expertadvice" 
-data-role="button"
-data-icon="arrow-r"
->Expert Advice</a></li>
-<li><a href="#videoadvice" 
-data-role="button"
-data-icon="arrow-r"
->Video Advice</a><li
-<li><a href="#tweets" 
-data-role="button"
-data-icon="arrow-r"
->Tweets</a></li>
-</ul>
-</div><!--end of navbar div -->
-</div> <!-- end of footer -->
-</div><!--closing div for Debt Calculator -->
-
-<!--Expert Advice -->
-<div id="expertadvice" data-role="page"   data-title="View Source: Expert Advice">
-<div data-role="header" data-position="fixed" data-id="vs_header">
-<h1>Expert Advice</h1>
-<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
-<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
-</div>
-<div data-role="content">Expert Advice</div>
-<div data-role="footer" 
-data-position="fixed"
-data-id="vs_footer">
-<div data-role="navbar">
-<ul>
-<li><a href="#compoundcalculator" 
-data-role="button"
-data-icon="arrow-r"
->Compound Calculator</a></li>
-<li><a href="#debtcalculator" 
-data-role="button"
-data-icon="arrow-r"
->Debt Calculator</a></li>
-<li><a href="#" 
-data-role="button"
-data-icon="arrow-r"
->Expert Advice</a></li>
-<li><a href="#videoadvice" 
-data-role="button"
-data-icon="arrow-r"
->Video Advice</a><li
-<li><a href="#tweets" 
-data-role="button"
-data-icon="arrow-r"
->Tweets</a></li>
-</ul>
-</div><!--end of navbar div -->
-</div> <!-- end of footer -->
-</div><!--closing div for Expert Advice -->
-
-<!-- Page: Videos -->
-	<div id="videos"
-		data-role="page"
-		data-title="View Source: Videos">
-		<div data-role="header"
-			data-position="fixed"
-			data-id="vs_header">
-			<h1>Videos</h1>
-			<a href="#home"
-				data-icon="home"
-				data-iconpos="notext"
-				>Home</a>
-			<a href="#info"
-				data-icon="info"
-				data-iconpos="notext"
-				data-rel="dialog"
-				>Info</a>
-		</div><!-- header -->
-		<div data-role="content">
-
-	<div data-role="content">
-		<div class="ui-grid-a" id="videolist">
-		</div><!-- grid -->
-	</div><!-- content -->
-
-		</div><!-- content -->
-		
-		<div data-role="footer"
-			data-position="fixed"
-			data-id="vs_footer">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" 
-					data-role="button"
-					data-icon="home"
-					>Home</a></li>
-					<li><a href="#blog" 
-					data-role="button"
-					data-icon="vs_blog"
-					>Blog</a></li>
-					<li><a href="#photos" 
-					data-role="button"
-					data-icon="vs_photo"
-					>Photos</a></li>
-					<li><a href="#tweets" 
-					data-role="button"
-					data-icon="vs_twitter"
-					>Tweets</a></li>
-				</ul>
-			</div><!-- navbar -->
-		</div><!-- footer -->
-	</div><!-- page -->
-	
-	<div id="videoplayer"
-		data-role="page">
-		<div data-role="header"
-			data-position="fixed"
-			data-theme="a">
-			<a href="#videos"
-				data-transition="fade"
-				data-icon="back"
-				data-iconpos="notext"
-				data-direction="reverse"
-				>Videos</a>
-			<h1>Videos</h1>
-		</div><!-- header -->
-		<div data-role="content">
-			<div id="myplayer"></div>
-		</div><!-- content -->
-	</div><!-- page -->
-	
-
-<!--Twitter feed-->
-<div id="tweets" data-role="page"   data-title="View Source: Tweets">
-<div data-role="header" data-position="fixed" data-id="vs_header">
-<h1>Twitter feed</h1>
-<a href="#home" data-icon="home" data-iconpos="notext">Home</a>
-<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog">Info</a>
-</div>
-
-<div data-role="content"
-			id="tweetlist">Loading...thank you for your patience with Twitter...
-			</div>
-
-<div data-role="footer" 
-data-position="fixed"
-data-id="vs_footer">
-<div data-role="navbar">
-<ul>
-<li><a href="#compoundcalculator" 
-data-role="button"
-data-icon="arrow-r"
->Compound Calculator</a></li>
-<li><a href="#debtcalculator" 
-data-role="button"
-data-icon="arrow-r"
->Debt Calculator</a></li>
-<li><a href="#expertadvice" 
-data-role="button"
-data-icon="arrow-r"
->Expert Advice</a></li>
-<li><a href="#videoadvice" 
-data-role="button"
-data-icon="arrow-r"
->Video Advice</a><li
-<li><a href="#" 
-data-role="button"
-data-icon="arrow-r"
->Tweets</a></li>
-</ul>
-</div><!--end of navbar div -->
-</div> <!-- end of footer -->
-</div> <!--closing div for Tweets-->
-
-<!--info dialogue -->
-<div data-role="page"   id="info">
-		<div data-role="header">
-			<h1>About View Source</h1>
-		</div>
-		<div data-role="content">
-			<p>Text goes here.</p>
-			<a href="#"
-				data-role="button"
-				data-inline="true"
-				data-rel="back"
-			>cancel</a>
-			<a href="#home"
-				data-role="button"
-				data-inline="true"
-			>home</a>
-		</div>
+      <!-- This is the Home page -->
+    <section id="homePage" data-role="page">
+        <header data-role="header" data-theme="d">
+        <h1>CreditCalx</h1>
+        <!-- navbar -->
+<!--        <div data-role="navbar">
+	<ul>
+		<li><a href="#homePage" class="ui-btn-active ui-state-persist" data-transition="flip">Home</a></li>
+		<li><a href="#intCalcPage" data-transition="pop">Interest</a></li>
+		<li><a href="#debtCalcPage" data-transition="slide">Debt</a></li>
+		<li><a href="#learnAboutPage" data-transition="slidedown">Learn</a></li>
+		<li><a href="#talkAboutPage" data-transition="slideup">Talk</a></li>
+	</ul>
 	</div>
-	<!--end of info dialogue-->
+/navbar -->
+        </header>
+        <div data-role="content">
+        <p></p>
 
-<!-- blog call -->
-<script src="http://iviewsource.com/?json=recentstories&callback=listPosts" type="text/javascript"></script>
+            <h1 align="center">CreditCalx</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a" align="center"><p><a href="#intCalcPage" style="text-decoration:none;" data-transition="flip"><img src="images/intcalc.png"></a></p></div>
+                <div class="ui-block-b" align="center"><p><a href="#debtCalcPage" style="text-decoration:none;" data-transition="slide"><img src="images/debtcalc.png"></a></p></div>
+                <div class="ui-block-a" align="center"><p><a href="#learnAboutPage" style="text-decoration:none;" data-transition="slidedown"><img src="images/learnabout.png"></a></p></div>
+                <div class="ui-block-b" align="center"><p><a href="#talkAboutPage" style="text-decoration:none;" data-transition="slideup"><img src="images/talkabout.png"></a></p></div>
+            </div>
 
-<!-- YouTube call -->
-<!-- the url/uploads?...the category is the keyword that tells the API which videos you want. script...&category=creditcalx&callback=listVideos....
-I took it out bc we want all -->
+        </div>
+        
+        <div data-role="footer" align="center" data-position="fixed" data-theme="d"><p><a href="#aboutPage" data-rel="dialog" style="text-decoration:none;">About CreditCalx</a></p></div>
+      
+    </section>
 
-<script src="http://gdata.youtube.com/feeds/users/creditcalx/uploads?alt=json-in-script&max-results=30&callback=listVideos" type="text/javascript"></script>
+    
+
+    <!-- This is the About CreditCalx page -->
+    <section id="aboutPage" data-role="page">
+        <header data-role="header" data-theme="a">
+        <h1>CreditCalx</h1>
+        </header>
+     
+        <div data-role="content" style="background-image: url(jquery.mobile/images/white_background.png)">
+        <p>CreditCalx was developed by Oakland Tribune reporter Angela Woodall, interaction designer Dan Turner, and web developer Rod Reyes. The app is open source.</p>
+		<p>The goal is to develop a collection of civic apps and create a model for bringing together civic engagement and journalism through technology. Visit <a href="http://www.creditcalx.com" target="_blank">CreditCalx.com</a> for more info or tweet @CreditCalx.</p>
+
+        </div>    
+    </section>
 
 
+    <!-- This is the Interest Calculator page -->
+    <div id="intCalcPage" data-role="page" data-theme="d">
+        <header data-role="header" data-theme="d">
+        <h1>CreditCalx</h1>
+        <!-- navbar -->
+        <div data-role="navbar">
+	<ul>
+		<li><a href="#homePage">Home</a></li>
+		<li><a href="#intCalcPage" class="ui-btn-active ui-state-persist">Interest</a></li>
+		<li><a href="#debtCalcPage">Debt</a></li>
+		<li><a href="#learnAboutPage">Learn</a></li>
+		<li><a href="#talkAboutPage">Talk</a></li>
+	</ul>
+	</div>
+	<!-- /navbar -->
+        </header>
+        <div data-role="content">
+   <!--     <p>Calculate Interest Costs of Purchases</p> -->
+        <form method="get" action="">
+            <fieldset data-role="fieldcontain">
+    		    <label for="initialPrice">Price: $</label>
+			    <input type="number" name="initialPrice" id="initialPrice" value="" placeholder="" />
+            </fieldset>
+        </form> 
+        
+       <div data-role="controlgroup" data-type="horizontal" align="center">
+       	<button id="lowestRate">15%</button>
+       	<button id="middleRate">20%</button>
+       	<button id="highestRate">25%</button>
+       </div>
+       <h5 align="center"><a href="#APRPage" data-rel="dialog" style="text-decoration:none;">What is my APR?</a></h5>
+
+       <form method="get" action="">
+       	<div data-role="none" align="center">
+            <label for="numMonths">Months Compounded</label>
+            <input type="range" name="numMonths" id="numMonths" value="1" min="1" max="36" data-highlight="true" data-mini="true" data-theme="d" data-track-theme="b" />
+        </div>
+       </form>
+
+   		<div align="center">
+        <p><span id="displayPrice">$0.00</span> at <span id="displayRate">15</span>% interest compounded over <span id="displayMonth">1 month</span> will cost you</p>
+        <span id="interest">$0.00</span>
+        <span>in interest alone</span>  
+		</div>
+		<h3 align="center">What else could you be spending that money on?</h3>
+        </div>    
+        
+        <div data-role="footer" align="center" data-theme="d"><p><a href="#aboutPage" data-rel="dialog" style="text-decoration:none;">About CreditCalx</a></p></div>
+    </div>
+    
+    
+    
+    
+    <!-- This is the APR page -->
+    <section id="APRPage" data-role="page">
+        <header data-role="header" data-theme="a">
+        <h1>CreditCalx</h1>
+        </header>
+     
+        <div data-role="content" style="background-image: url(jquery.mobile/images/white_background.png)">
+        <p>Credit card offers are everywhere. So you have to know the house rules to take advantage of credit cards instead of the card companies taking advantage of you. Ask yourself, are the payback promises in travel and dining rewards worth the price and effort? Before you answer, think about what you could be doing with the money you will spend on interest for that $3.50 latte, washer-dryer combo or vacation to Hawaii.</p>
+
+<p>No.1, experts say: Know your APR, the fees your card charges and how much you will really end up spending on a purchase if you carry a balance on your card.</p>
+
+<p>What is APR? It stands for annual percentage rate and it is the TRUE cost of your credit card. The higher the APR, the more your credit card purchases will cost you. If you want to take control of your finances and pay for your daughter or son’s college education or save for your retirement (or save for anything) you have to know how APR works.</p>  
+
+<p>Take out your credit card statement and look at the box on page 3 to find your APR, which breaks down into a monthly interest rate by dividing the annual rate by 12 months. </p>
+
+<p>For example, an 25% APR breaks down to a monthly interest rate of more than 2% when you divide by 12 months. </p>
+
+<p>So you can quickly calculate your monthly finance charges by multiplying the monthly interest rate by your total account balance. (Don't panic! This is step one. Keep reading  and those APR offers won't fool you any more.)</p> 
+
+<p>Here’s an example from Consolidated Credit Counseling Services using a lower APR: You have a zero balance on your 18% APR credit card with a 1.5% monthly interest rate. You buy an item for $1,000 and don’t pay off the balance immediately. At the end of the month, your monthly finance charge will be $15. If you pay interest plus 1%, your first minimum payment on your $1,000 credit card balance will be $25. </p>
+
+<p>Notice that two thirds of your first payment is covering the interest accrued in that month. You only paid $10 towards the principal—the original amount of your debt. This is why it takes so long to pay off your credit cards if you pay only the minimum payments, because most of what you pay each month is being used to cover your monthly finance charges.  (Our example is not an endorsement of CCCS. You have to be just as careful about credit consolidation offers as credit cards.)</p>
+
+<p>PHOTO HERE</p>
+
+<p>If your credit card uses a periodic rate that just means interest builds each day rather than each month.</p>
+
+<p>BTW, don't pass up page 2 of your credit card statement. You'll find all sorts of useful information about how your credit card company is billing you. </p>
+<p>For more reading: http://www.ftc.gov/bcp/conline/edcams/credit/index.html. </p>
+
+        </div>    
+    </section>
+    
+    
+
+    <!-- This is the Debt Calculator page -->
+    <div id="debtCalcPage" data-role="page" data-theme="d">
+      <script>
+	  function debtCalc(showAmort)
+{
+cwBalance=document.getElementById('initialBalance');
+initialRate=document.getElementById('initialRate');
+monthlyPayment=document.getElementById('monthlyPayment');
+payoffMonths=document.getElementById('payoffMonths');
+result=document.getElementById('result');
+
+if (initialBalance.value=='') {alert('Please enter your credit card balance.'); return;}
+if (initialRate.value=='') {alert('Please enter your credit card\'s interest rate.'); return;}
+if ( monthlyPayment.value=='' && payoffMonths.value=='' ) {alert('Please enter either a payment amount or desired months.'); return;}
+
+var mRate=(initialRate.value/100)/12;
+if (monthlyPayment.value=='')
+{
+	var payment=initialBalance.value*(mRate)/( 1-Math.pow((1+mRate),(-payoffMonths.value)) );
+	monthlyPayment.value=Math.round(payment*100)/100 + 0.01;
+}
+
+var remainingBalance=initialBalance.value;
+var minPayment=mRate*initialBalance.value;
+var months=0;
+if (minPayment>monthlyPayment.value) {alert ('Your monthly payment is less than the monthly interest charged by this card.');return;}
+
+var amort='<table width=100% cellpadding=2 cellspacing=0 border=1 style="text-align:right;"><tr><th>Month</th><th>Principal</th><th>Interest</th><th>Balance</th></tr>';
+var totalPaid=0.1-0.1;
+while (remainingBalance>0)
+{
+	months++;
+	var interest=remainingBalance*mRate;
+	var principal=monthlyPayment.value-interest;
+	if (principal>remainingBalance) principal=remainingBalance;
+	totalPaid=totalPaid + principal + interest;
+
+	remainingBalance = remainingBalance - principal;
 
 
+	amort+='<tr><td>' + months + '</td><td>$' + Number(principal).toFixed(2) + '</td><td>$' + Number(interest).toFixed(2) + '</td><td>$' + Number(remainingBalance).toFixed(2) + '</td></tr>';
+}
+payoffMonths.value=months;
+result.innerHTML="At $" + Number(monthlyPayment.value).toFixed(2) + " a month, it will take " + months + " months to pay off this card and will cost you a total of $" + Number(totalPaid).toFixed(2) + ".";
+if (showAmort) {
+	result.innerHTML+='<BR><BR><B>Amortization Schedule</B><BR><div style="overflow: scroll;height: 200px;">' + amort + '</table></div>';
+} 
+else {
+	result.innerHTML+=' <a href="javascript:debtCalc(true);">show amortization</a>';
+}
 
-<script src="http://twitter.com/status/user_timeline/angelawoodall.json?count=30&callback=listTweets" type="text/javascript"></script>
 
-
+}
+	  
+	</script>
+        <header data-role="header" data-theme="d">
+        <h1>CreditCalx</h1>
 
 <script type="text/javascript">
-	$(document).ready(function() {
-		var refreshID = setInterval(function() {
-			$.getJSON('http://twitter.com/status/user_timeline/angelawoodall.json?count=30&callback=?',function(data) {
-				listTweets(data);
-				$('#tweetlist').trigger('create');
+		$(document).bind("pageinit", function () {
+			$(".optionbuttons").hide();
+			$(".choice-2").hide();
+			//$("#radio-choice-1").select(function(){
+			$("#radio-choice-1").bind( "change", function(event, ui) {
+				$(".choice-1").show();
+				$(".choice-2").hide();	
 			});
-		}, 5000);
-	});
+			//$("#radio-choice-2").select(function(){
+			$("#radio-choice-2").bind( "change", function(event, ui) {
+				$(".choice-1").hide();
+				$(".choice-2").show();	
+			});
+			/*$(":radio[name='optionbuttons']").change(function() {
+				var test =$(this).val();
+				$("." + test).show();
+				var current = 
+				$("." + current).hide();				
+
+				});*/
+		});
 </script>
+        </header>
+        <!-- navbar -->
+        <div data-role="navbar">
+	<ul>
+		<li><a href="#homePage">Home</a></li>
+		<li><a href="#intCalcPage">Interest</a></li>
+		<li><a href="#debtCalcPage" class="ui-btn-active ui-state-persist">Debt</a></li>
+		<li><a href="#learnAboutPage">Learn</a></li>
+		<li><a href="#talkAboutPage">Talk</a></li>
+	</ul>
+	</div>
+	<!-- /navbar -->        
+        <div data-role="content">
+
+   <!-- <p>Calculate Paying Off Your Debt</p> -->
+        <form method="get" action="">
+            <fieldset data-role="fieldcontain">
+    		    <label for="initialBalance">Enter your current balance: $</label>
+			    <input type="number" name="initialBalance" id="initialBalance" value="" placeholder="" />
+            </fieldset>
+            <fieldset data-role="fieldcontain">
+    		    <label for="initialRate">Enter your card's interest rate: %</label>
+			    <input type="number" name="initialRate" id="initialRate" value="" placeholder="" />
+            </fieldset>
+
+	<fieldset data-role="controlgroup" data-type="horizontal" align="center">
+	<!-- <legend></legend> -->
+		<div style="width: 400px; margin: 0 auto;">
+     	<input type="radio" name="optionbuttons" id="radio-choice-1" value="choice-1" checked="checked" />
+     	<label for="radio-choice-1">Clear in months...</label>
+
+     	<input type="radio" name="optionbuttons" id="radio-choice-2" value="choice-2"  />
+     	<label for="radio-choice-2">Monthly payment…</label>
+		</div>
 
 
-</body>
+	</fieldset>
+			<div id="monthOption" class="choice-2">
+            <fieldset data-role="fieldcontain">
+    		    <label for="monthlyPayment">Pay per month: $</label>
+			    <input type="number" name="monthlyPayment" id="monthlyPayment" value="" placeholder="" />
+            </fieldset>
+			</div>
+			<div id="payoffOption" class="choice-1">
+            <fieldset data-role="fieldcontain">
+    		    <label for="payoffMonths">Months to clear debt: </label>
+			    <input type="number" name="payoffMonths" id="payoffMonths" value="" placeholder="" />
+            </fieldset>
+			</div>
+            <p id="debtCalcButton"><input type="button" value="Calculate" onclick="debtCalc(false);"></p>
+	    
+            <p id="result"></p>
+
+		<!--<div data-role="fieldcontain">
+		<label for="flip-min"></label>
+		<select name="flip-min" id="flip-min" data-role="slider">
+			<option value="off">Clear debt by...</option>
+			<option value="on">Pay per month...</option>
+		</select>
+
+
+	</div>-->
+	                        
+        </form> 
+        </div>    
+        <div data-role="footer" align="center" data-theme="d"><p><a href="#aboutPage" data-rel="dialog" style="text-decoration:none;">About CreditCalx</a></p></div>
+    </div>
+
+
+        <!-- This is the Learn About page -->
+    <div id="learnAboutPage" data-role="page" data-theme="d">
+        <header data-role="header" data-theme="d">
+        <h1>CreditCalx</h1>
+        <!-- navbar -->
+        <div data-role="navbar">
+	<ul>
+		<li><a href="#homePage">Home</a></li>
+		<li><a href="#intCalcPage">Interest</a></li>
+		<li><a href="#debtCalcPage">Debt</a></li>
+		<li><a href="#" class="ui-btn-active ui-state-persist">Learn</a></li>
+		<li><a href="#talkAboutPage">Talk</a></li>
+	</ul>
+	</div><!-- /navbar -->        
+        </header>
+        <div data-role="content">
+	        <p> </p>
+	        <div id="videolist">
+
+	        </div>
+        </div> 
+        <div data-role="footer" align="center" data-position="fixed" data-theme="d"><p><a href="#aboutPage" data-rel="dialog" style="text-decoration:none;">About CreditCalx</a></p></div>
+    </div>
+    
+    	<!-- This is a dynamically generated videos-in-playlist page -->
+	<div id="videolist"
+		data-role="page">
+		<div data-role="header" data-position="fixed" data-theme="d">
+			<a href="#learnAboutPage" data-icon="back" data-iconpos="notext" data-direction="reverse">Videos</a>
+		<h1>Post</h1>
+		</div><!-- header-->
+		<div data-role="content">
+			<div id="mypost">Post goes here</div>
+		</div><!-- content -->
+	</div><!-- page -->
+
+
+	<!-- This is the video player -->
+	<div id="videoplayer" data-role="page">
+		<div data-role="header" data-position="fixed" data-theme="d">
+			<a href="#learnAboutPage" data-transition="fade" data-icon="back" data-iconpos="notext" data-direction="reverse">Videos</a>
+			<h1>Our YouTube Channel</h1>
+		</div>
+		
+		<div data-role="content">
+			<div id="player">
+			</div>
+		</div>
+	</div>
+
+
+
+    
+        <!-- This is the Talk About page -->
+    <div id="talkAboutPage" data-role="page" data-theme="d">
+        <header data-role="header" data-theme="d">
+        <h1>CreditCalx</h1>
+        </header>
+        <div data-role="navbar">
+	<ul>
+		<li><a href="#homePage">Home</a></li>
+		<li><a href="#intCalcPage">Interest</a></li>
+		<li><a href="#debtCalcPage">Debt</a></li>
+		<li><a href="#learnAboutPage">Learn</a></li>
+		<li><a href="#" class="ui-btn-active ui-state-persist">Talk</a></li>
+	</ul>
+	</div><!-- /navbar -->        
+        <div data-role="content">
+        	<div id="postList">
+
+        	</div>
+        </div> 
+        <div data-role="footer" align="center" data-position="fixed" data-theme="d"><p><a href="#aboutPage" data-rel="dialog" style="text-decoration:none;">About CreditCalx</a></p></div>
+    </div>
+
+	<!-- This is a dynamically generated blog post page -->
+	<div id="blogpost"
+		data-role="page">
+		<div data-role="header" data-position="fixed" data-theme="d">
+			<a href="#talkAboutPage" data-icon="back" data-iconpos="notext" data-direction="reverse">News</a>
+		<h1>Post</h1>
+		</div><!-- header-->
+		<div data-role="content">
+			<div id="mypost">Post goes here</div>
+		</div><!-- content -->
+	</div><!-- page -->
+
+
+	</div>
+    
+
+ 
+<script>
+var months = 1;
+var apr = 15;
+var price = 0;
+    
+$(document).bind('pageinit', function(event){
+
+    var priceField = $('#initialPrice');
+    price = priceField.val();
+    
+    //calc interest on following events...
+    
+    //...typing in price field
+    priceField.keyup(function(){calcInterest();});
+    
+    //...moving out of price field
+    priceField.blur(function() {calcInterest();});
+
+    //...changing price field
+    priceField.change(function(){calcInterest();});
+    
+    //...changing months compounded
+    $( "#numMonths" ).change(function() {
+	months = $(this).val();
+	updateMonths(months);
+    });
+    
+    //...clicking different apr buttons
+    $("#lowestRate").click(function(){
+	updateApr(15.8);
+	$("#displayRate").text("15");
+    });
+    $("#middleRate").click(function(){
+	updateApr(16.3);
+	$("#displayRate").text("20");
+    });
+    $("#highestRate").click(function(){
+	updateApr(16.9);
+	$("#displayRate").text("25");
+    });
+    
+});
+
+function updateMonths(ui) {
+    //months = parseInt(ui.value, 10);
+    months = parseInt(ui, 10);
+    $("#amount").val(months);
+    $("#slider_value").val(months);
+    $("#displayMonth").text(months+' month'+((months>1) ? 's' : ''));
+    calcInterest();
+}
+
+function updateApr(newApr) {
+    apr = newApr;
+    calcInterest();
+}
+
+  
+// calculates compound interest on value entered by user in enterPrice, 
+// action on button click    
+function calcInterest() {
+    var price = parseFloat($('#initialPrice').val());
+    if (isNaN(price)) { // make sure price is a number
+	price = 0;
+    }
+
+    var interestRate = (apr / 12) / 100;     //monthly interest
+    // ***** this doesn't make sense because annualFreq * years is always 1
+    // COMPOUND, r is interest rate, n is freq per year, t is years
+    // endPrice = priceInitial * Math.pow((1 + InterestRate), (annualFreq*years));
+    
+    var endPrice = price * Math.pow((1 + interestRate), months);
+    var interest = endPrice - price;
+    var parameters = '$' + price + ' at ' + apr +
+	'% interest compounded over ' + months +
+	' month' + ((months > 1) ? 's' : '') + ' will cost you';
+    $("#parameters").html(parameters);
+    $("#fullPrice").html("$" + endPrice.toFixed(2));
+    $("#displayPrice").text("$" + price.toFixed(2));
+    $("#interest").html("$" + interest.toFixed(2));
+    
+}
+ </script> 
+     
+<script src="http://www.creditcalx.com/?json=get_recent_posts&callback=listPosts" type="text/javascript"></script>
+
+<!-- <script src="https://gdata.youtube.com/feeds/api/users/creditcalx/playlists?v=2&callback=listVideos" type="text/javascript"></script> -->
+
+<!-- <script src="http://gdata.youtube.com/feeds/users/creditcalx/playlists?alt=json&callback=listVideos" type="text/javascript"></script> -->
+
+<script src="http://gdata.youtube.com/feeds/users/creditcalx/playlists?alt=json&callback=listPlaylists" type="text/javascript"></script> 
+
+
+<script src="https://gdata.youtube.com/feeds/api/playlists/PLFn8hXDg-O7JHZf8nMMcPTQMwySongA-M?alt=jsonc&v=2&callback=getVidFromPlaylist" type="text/javascript"></script>
+
+
+
+
+<!-- <script src="http://twitter.com/status/user_timeline/CreditCalx.json?count=30&callback=listTweets" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+var refreshID = setInterval(function() {
+
+$.getJSON('http://twitter.com/status/user_timeline/creditcalx.json?count=30&callback=?',function(data) {
+
+listTweets(data);
+
+$('#tweetlist').trigger('create');
+
+});
+
+}, 5000);
+
+});
+</script> -->
+
+  </body>
 </html>
+
